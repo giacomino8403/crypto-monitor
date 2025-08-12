@@ -255,6 +255,47 @@ def main():
     (docs / "changes_feed.txt").write_text("\n".join(changes_lines) + "\n", encoding="utf-8")
     # === FINE AGGIUNTA ===
 
+        # === Creazione pagina HTML per signals ===
+    html_signals = ["<html><head><meta charset='utf-8'><title>Signals Feed</title></head><body>"]
+    html_signals.append(f"<h1>Signals Feed - generated at {snapshot.get('generated_at','N/A')}</h1>")
+    html_signals.append("<table border='1' cellpadding='5'><tr><th>Symbol</th><th>Timeframe</th><th>Price</th><th>RSI</th><th>MACD Cross</th><th>EMA State</th><th>Trend</th><th>Breakout Up</th><th>Breakout Down</th><th>ADX</th></tr>")
+    for sym, tf_data in snapshot.get("data", {}).items():
+        for tf, row in tf_data.items():
+            ind = row.get("indicators", {})
+            sig = row.get("signals", {})
+            lc = row.get("last_candle", {})
+            html_signals.append(
+                f"<tr><td>{sym}</td><td>{tf}</td>"
+                f"<td>{lc.get('close')}</td>"
+                f"<td>{round(ind.get('rsi_14',0),2)}</td>"
+                f"<td>{sig.get('macd_cross')}</td>"
+                f"<td>{sig.get('ema_state')}</td>"
+                f"<td>{sig.get('trend')}</td>"
+                f"<td>{sig.get('breakout_up')}</td>"
+                f"<td>{sig.get('breakout_dn')}</td>"
+                f"<td>{round(ind.get('adx_14',0),1)}</td></tr>"
+            )
+    html_signals.append("</table></body></html>")
+    (docs / "signals_feed.html").write_text("\n".join(html_signals), encoding="utf-8")
+
+    # === Creazione pagina HTML per changes ===
+    html_changes = ["<html><head><meta charset='utf-8'><title>Changes Feed</title></head><body>"]
+    html_changes.append(f"<h1>Changes Feed - generated at {changes.get('generated_at','N/A')}</h1>")
+    html_changes.append("<table border='1' cellpadding='5'><tr><th>Symbol</th><th>Timeframe</th><th>Indicator</th><th>From</th><th>To</th><th>Price</th></tr>")
+    for ch in changes.get("changes", []):
+        sym = ch.get("symbol")
+        tf = ch.get("timeframe")
+        price = ch.get("price")
+        for k, v in ch.get("diff", {}).items():
+            html_changes.append(
+                f"<tr><td>{sym}</td><td>{tf}</td><td>{k}</td>"
+                f"<td>{v.get('from')}</td><td>{v.get('to')}</td><td>{price}</td></tr>"
+            )
+    html_changes.append("</table></body></html>")
+    (docs / "changes_feed.html").write_text("\n".join(html_changes), encoding="utf-8")
+
+    # === Fine HTML ===
+
     print(f"Wrote docs/snapshot.json, docs/changes.json, docs/signals_feed.txt and docs/changes_feed.txt at {now_iso()}")
 
 if __name__ == "__main__":
