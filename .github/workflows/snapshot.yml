@@ -1,12 +1,23 @@
 name: snapshot
 
+# === nuove scadenze ===
 on:
   schedule:
-    - cron: "*/10 * * * *"  # every 10 minutes
+    - cron: "*/10 * * * *"     # ogni 10 minuti (00, 10, 20...)
+    - cron: "5-59/10 * * * *"  # ridondanza: 05, 15, 25...
   workflow_dispatch:
+  # === fine scadenze ===
+
 
 permissions:
   contents: write
+
+  # === annulla lavoro in corso ===
+  concurrency:
+  group: snapshot
+  cancel-in-progress: true
+  # === fine ===
+
 
 jobs:
   build:
@@ -36,10 +47,11 @@ jobs:
         run: |
           python main_snapshot.py
 
-      - name: Commit & push changes (if any)
+            - name: Commit & push changes (if any)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase
           git add docs/snapshot.json docs/changes.json docs/signals_feed.txt docs/changes_feed.txt docs/signals_feed.html docs/changes_feed.html || true
           if ! git diff --cached --quiet; then
             git commit -m "Update snapshots ($(date -u +"%Y-%m-%dT%H:%M:%SZ"))"
