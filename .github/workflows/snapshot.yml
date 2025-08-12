@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 
-  concurrency:
+concurrency:
   group: snapshot
   cancel-in-progress: true
 
