@@ -7,7 +7,7 @@ crypto_monitor: fetch Kraken market data, compute indicators, and publish JSON s
 - Configurable via env vars:
     EXCHANGE      (default: kraken)
     TICKERS       (comma-separated; default: auto-pick spot/perp pairs quoted in USDT)
-    TIMEFRAMES    (comma-separated; default: 1M,1w,1d,4h,1h,15m)
+    TIMEFRAMES    (comma-separated; default: 1M,1w,1d,4h,1h,15m,5m,1m)
     LIMIT         (candles per timeframe; default: 200)
     MAX_PAIRS     (only when TICKERS not set; default: 15)
 """
@@ -139,7 +139,7 @@ def fetch_ohlcv_safe(ex, symbol, timeframe, limit):
 def build_snapshot():
     exchange_id = os.getenv("EXCHANGE","kraken")
     # === MODIFICA: includiamo 1d/1w/1M come default ===
-    timeframes = [t.strip() for t in os.getenv("TIMEFRAMES","1M,1w,1d,4h,1h,15m").split(",") if t.strip()]
+    timeframes = [t.strip() for t in os.getenv("TIMEFRAMES","1M,1w,1d,4h,1h,15m,5m,1m").split(",") if t.strip()]
     limit = int(os.getenv("LIMIT","200"))
     max_pairs = int(os.getenv("MAX_PAIRS","15"))
     tickers_env = os.getenv("TICKERS", "").strip()
