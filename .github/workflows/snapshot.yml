@@ -42,7 +42,7 @@ jobs:
         run: |
           python main_snapshot.py
 
-            - name: Commit & push changes (if any)
+      - name: Commit & push changes (if any)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
