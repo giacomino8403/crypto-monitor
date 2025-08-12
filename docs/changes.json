@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-12T09:22:37.632887+00:00",
+  "generated_at": "2025-08-12T09:46:53.392155+00:00",
   "notes": [],
   "changes": [
     {
@@ -7,8 +7,8 @@
       "timeframe": "15m",
       "diff": {
         "macd_cross": {
-          "from": "none",
-          "to": "bearish"
+          "from": "bearish",
+          "to": "none"
         }
       },
       "price": 0.2274
@@ -18,41 +18,67 @@
       "timeframe": "15m",
       "diff": {
         "macd_cross": {
-          "from": "none",
-          "to": "bearish"
-        }
-      },
-      "price": 0.2635
-    },
-    {
-      "symbol": "AAVE/USD",
-      "timeframe": "15m",
-      "diff": {
-        "macd_cross": {
           "from": "bearish",
           "to": "none"
         }
       },
-      "price": 296.39
+      "price": 0.2665
     },
     {
       "symbol": "AB/EUR",
       "timeframe": "15m",
       "diff": {
-        "macd_cross": {
-          "from": "bearish",
-          "to": "none"
+        "breakout_dn": {
+          "from": true,
+          "to": false
+        },
+        "ema_state": {
+          "from": "bullish",
+          "to": "bearish"
         }
       },
       "price": 0.007021
+    },
+    {
+      "symbol": "AB/USD",
+      "timeframe": "1h",
+      "diff": {
+        "macd_cross": {
+          "from": "none",
+          "to": "bullish"
+        }
+      },
+      "price": 0.008183
+    },
+    {
+      "symbol": "AB/USD",
+      "timeframe": "15m",
+      "diff": {
+        "ema_state": {
+          "from": "bearish",
+          "to": "bullish"
+        }
+      },
+      "price": 0.008183
+    },
+    {
+      "symbol": "ACH/EUR",
+      "timeframe": "15m",
+      "diff": {
+        "trend": {
+          "from": "trending",
+          "to": "choppy"
+        }
+      },
+      "price": 0.01854
     },
     {
       "symbol": "ACH/USD",
       "timeframe": "15m",
       "diff": {
         "macd_cross": {
-          "from": "none",
-          "to": "bearish"
+          "from": "bearish",
+          "to": "none"
         }
       },
       "price": 0.02157
