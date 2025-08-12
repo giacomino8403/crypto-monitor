@@ -28,8 +28,8 @@ jobs:
       - name: Run snapshot
         env:
           EXCHANGE: kraken
-          TIMEFRAMES: "1h,15m"
-          LIMIT: "200"
+          TIMEFRAMES: "1M,1w,1d,4h,1h,15m"
+          LIMIT: "300"
           MAX_PAIRS: "15"
           # Optional: pin specific pairs (override auto-pick)
           # TICKERS: "BTC/USDT,ETH/USDT,SOL/USDT"
