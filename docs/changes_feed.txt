@@ -1,1 +1,13 @@
-generated_at=2025-08-12T10:57:38.956145+00:00
+generated_at=2025-08-12T11:04:05.942611+00:00
+A/EUR,1h,macd_cross,none,bearish,price=0.4545
+A/EUR,1h,ema_state,bullish,bearish,price=0.4545
+A/USD,1h,macd_cross,none,bearish,price=0.5249
+AAVE/EUR,1h,macd_cross,none,bearish,price=253.95
+AAVE/USD,1h,macd_cross,none,bearish,price=294.14
+AB/EUR,1h,trend,trending,choppy,price=0.007044
+AB/USD,15m,macd_cross,bullish,none,price=0.008182
+AB/USD,15m,ema_state,bearish,bullish,price=0.008182
+ACA/EUR,1h,macd_cross,none,bearish,price=0.02438
+ACA/EUR,15m,rsi_zone,overbought,oversold,price=0.02438
+ACA/EUR,15m,breakout_dn,False,True,price=0.02438
+ACH/USD,1h,macd_cross,none,bearish,price=0.02132

@@ -1,5 +1,117 @@
 {
-  "generated_at": "2025-08-12T10:57:38.956145+00:00",
+  "generated_at": "2025-08-12T11:04:05.942611+00:00",
   "notes": [],
-  "changes": []
+  "changes": [
+    {
+      "symbol": "A/EUR",
+      "timeframe": "1h",
+      "diff": {
+        "macd_cross": {
+          "from": "none",
+          "to": "bearish"
+        },
+        "ema_state": {
+          "from": "bullish",
+          "to": "bearish"
+        }
+      },
+      "price": 0.4545
+    },
+    {
+      "symbol": "A/USD",
+      "timeframe": "1h",
+      "diff": {
+        "macd_cross": {
+          "from": "none",
+          "to": "bearish"
+        }
+      },
+      "price": 0.5249
+    },
+    {
+      "symbol": "AAVE/EUR",
+      "timeframe": "1h",
+      "diff": {
+        "macd_cross": {
+          "from": "none",
+          "to": "bearish"
+        }
+      },
+      "price": 253.95
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "1h",
+      "diff": {
+        "macd_cross": {
+          "from": "none",
+          "to": "bearish"
+        }
+      },
+      "price": 294.14
+    },
+    {
+      "symbol": "AB/EUR",
+      "timeframe": "1h",
+      "diff": {
+        "trend": {
+          "from": "trending",
+          "to": "choppy"
+        }
+      },
+      "price": 0.007044
+    },
+    {
+      "symbol": "AB/USD",
+      "timeframe": "15m",
+      "diff": {
+        "macd_cross": {
+          "from": "bullish",
+          "to": "none"
+        },
+        "ema_state": {
+          "from": "bearish",
+          "to": "bullish"
+        }
+      },
+      "price": 0.008182
+    },
+    {
+      "symbol": "ACA/EUR",
+      "timeframe": "1h",
+      "diff": {
+        "macd_cross": {
+          "from": "none",
+          "to": "bearish"
+        }
+      },
+      "price": 0.02438
+    },
+    {
+      "symbol": "ACA/EUR",
+      "timeframe": "15m",
+      "diff": {
+        "rsi_zone": {
+          "from": "overbought",
+          "to": "oversold"
+        },
+        "breakout_dn": {
+          "from": false,
+          "to": true
+        }
+      },
+      "price": 0.02438
+    },
+    {
+      "symbol": "ACH/USD",
+      "timeframe": "1h",
+      "diff": {
+        "macd_cross": {
+          "from": "none",
+          "to": "bearish"
+        }
+      },
+      "price": 0.02132
+    }
+  ]
 }
