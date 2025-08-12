@@ -237,3 +237,35 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # === Creazione file TXT leggibili ===
+    # signals_feed.txt = tutti i dati snapshot in formato lineare
+    signals_lines = [f"generated_at={snapshot.get('generated_at','N/A')}"]
+    for sym, tf_data in snapshot.get("data", {}).items():
+        for tf, row in tf_data.items():
+            ind = row.get("indicators", {})
+            sig = row.get("signals", {})
+            lc = row.get("last_candle", {})
+            signals_lines.append(
+                f"{sym},{tf}"
+                f",price={lc.get('close')}"
+                f",rsi={round(ind.get('rsi_14',0),2)}"
+                f",macd_cross={sig.get('macd_cross')}"
+                f",ema_state={sig.get('ema_state')}"
+                f",trend={sig.get('trend')}"
+                f",breakout_up={sig.get('breakout_up')}"
+                f",breakout_dn={sig.get('breakout_dn')}"
+                f",adx={round(ind.get('adx_14',0),1)}"
+            )
+    (docs / "signals_feed.txt").write_text("\n".join(signals_lines) + "\n", encoding="utf-8")
+
+    # changes_feed.txt = tutte le variazioni in formato lineare
+    changes_lines = [f"generated_at={changes.get('generated_at','N/A')}"]
+    for ch in changes.get("changes", []):
+        sym = ch.get("symbol")
+        tf = ch.get("timeframe")
+        price = ch.get("price")
+        for k, v in ch.get("diff", {}).items():
+            changes_lines.append(
+                f"{sym},{tf},{k},{v.get('from')},{v.get('to')},price={price}"
+            )
+    (docs / "changes_feed.txt").write_text("\n".join(changes_lines) + "\n", encoding="utf-8")
