@@ -1,4 +1,4 @@
-generated_at=2025-08-12T10:50:26.656079+00:00
+generated_at=2025-08-12T10:57:02.997429+00:00
 1INCH/EUR,1h,price=0.2272,rsi=44.0,macd_cross=none,ema_state=bearish,trend=trending,breakout_up=False,breakout_dn=False,adx=28.9
 1INCH/EUR,15m,price=0.2272,rsi=48.13,macd_cross=none,ema_state=bullish,trend=choppy,breakout_up=False,breakout_dn=False,adx=21.7
 1INCH/USD,1h,price=0.2635,rsi=41.3,macd_cross=none,ema_state=bearish,trend=trending,breakout_up=False,breakout_dn=False,adx=28.1
@@ -9,7 +9,7 @@ A/USD,1h,price=0.5249,rsi=44.41,macd_cross=none,ema_state=bearish,trend=choppy,b
 A/USD,15m,price=0.5249,rsi=33.28,macd_cross=none,ema_state=bearish,trend=choppy,breakout_up=False,breakout_dn=False,adx=22.9
 AAVE/EUR,1h,price=254.2,rsi=42.07,macd_cross=none,ema_state=bearish,trend=choppy,breakout_up=False,breakout_dn=False,adx=10.8
 AAVE/EUR,15m,price=254.2,rsi=44.46,macd_cross=none,ema_state=bearish,trend=choppy,breakout_up=False,breakout_dn=False,adx=18.4
-AAVE/USD,1h,price=295.57,rsi=43.23,macd_cross=none,ema_state=bearish,trend=choppy,breakout_up=False,breakout_dn=False,adx=14.0
+AAVE/USD,1h,price=295.16,rsi=42.29,macd_cross=none,ema_state=bearish,trend=choppy,breakout_up=False,breakout_dn=False,adx=14.0
 AAVE/USD,15m,price=295.16,rsi=43.88,macd_cross=none,ema_state=bearish,trend=choppy,breakout_up=False,breakout_dn=False,adx=15.7
 AB/EUR,1h,price=0.007044,rsi=61.53,macd_cross=none,ema_state=bullish,trend=trending,breakout_up=False,breakout_dn=False,adx=25.2
 AB/EUR,15m,price=0.007044,rsi=60.79,macd_cross=none,ema_state=bullish,trend=choppy,breakout_up=False,breakout_dn=False,adx=22.0
