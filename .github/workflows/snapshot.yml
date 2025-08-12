@@ -1,42 +1,33 @@
-name: snapshot
+name: Update Snapshot
 
 on:
   schedule:
-    - cron: "*/10 * * * *"  # every 10 minutes
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: "*/10 * * * *" # Esegui ogni 10 minuti
+  workflow_dispatch:       # Possibilità di lanciarlo manualmente
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install ccxt pandas ta
 
-      - name: Run snapshot
-        env:
-          EXCHANGE: kraken
-          TIMEFRAMES: "1h,15m"
-          LIMIT: "200"
-          MAX_PAIRS: "15"
-          # Optional: pin specific pairs (override auto-pick)
-          # TICKERS: "BTC/USDT,ETH/USDT,SOL/USDT"
+      - name: Run snapshot script
         run: |
           python main_snapshot.py
 
-           - name: Commit & push changes (if any)
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
