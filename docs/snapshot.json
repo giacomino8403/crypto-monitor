@@ -1,84 +1,56 @@
 {
   "exchange": "kraken",
-  "generated_at": "2025-08-12T11:03:30.023688+00:00",
+  "generated_at": "2025-08-12T11:30:55.932567+00:00",
   "timeframes": [
     "1h",
     "15m"
   ],
   "limit": 200,
   "symbols": [
-    "1INCH/EUR",
-    "1INCH/USD",
-    "A/EUR",
-    "A/USD",
-    "AAVE/EUR",
-    "AAVE/USD",
-    "AB/EUR",
-    "AB/USD",
-    "ACA/EUR",
-    "ACA/USD",
-    "ACH/EUR",
-    "ACH/USD",
-    "ACT/EUR",
-    "ACT/USD",
-    "ACX/EUR"
+    "ADA/USDT",
+    "AI16Z/USDT",
+    "ALGO/USDT",
+    "APE/USDT",
+    "ATOM/USDT",
+    "AVAX/USDT",
+    "BCH/USDT",
+    "BERA/USDT",
+    "BNB/USDT",
+    "BTC/USDT",
+    "CRO/USDT",
+    "DAI/USDT",
+    "DOGE/USDT",
+    "DOT/USDT",
+    "ETH/USDT"
   ],
   "data": {
-    "1INCH/EUR": {
+    "ADA/USDT": {
       "1h": {
         "last_candle": {
           "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.2272,
-          "high": 0.2272,
-          "low": 0.2272,
-          "close": 0.2272,
-          "volume": 0.0
+          "open": 0.770041,
+          "high": 0.771211,
+          "low": 0.766405,
+          "close": 0.771211,
+          "volume": 12441.28374674
         },
         "indicators": {
-          "ema_20": 0.22824112857159795,
-          "ema_50": 0.23257876023402418,
-          "rsi_14": 44.00459335152138,
-          "macd": -0.0015248047368111861,
-          "macd_signal": -0.0022989474190156112,
-          "macd_hist": 0.0007741426822044251,
-          "atr_14": 0.0017548546355511203,
-          "adx_14": 27.280456075084437,
-          "bb_high": 0.2317687146935737,
-          "bb_low": 0.22181128530642627,
-          "bb_mid": 0.22679,
-          "bb_width": 0.0439059455317582
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "trending",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      },
-      "15m": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.2272,
-          "high": 0.2272,
-          "low": 0.2272,
-          "close": 0.2272,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.22761215353773293,
-          "ema_50": 0.2274417384036302,
-          "rsi_14": 48.13107279279632,
-          "macd": 0.00017178207720341954,
-          "macd_signal": 0.00033912448383430796,
-          "macd_hist": -0.00016734240663088842,
-          "atr_14": 0.0006632999011634989,
-          "adx_14": 20.370906416290087,
-          "bb_high": 0.2294627441940232,
-          "bb_low": 0.22600725580597672,
-          "bb_mid": 0.22773499999999997,
-          "bb_width": 0.015173286442779946
+          "ema_20": 0.7821466550068321,
+          "ema_50": 0.7906552779943572,
+          "ema_9": 0.7768129818363847,
+          "ema_21": 0.7825963451139721,
+          "ema_200": 0.7786055714782086,
+          "vol_sma_20": 22836.412161562,
+          "rsi_14": 38.366188933126644,
+          "macd": -0.006373159559732722,
+          "macd_signal": -0.006080684562722647,
+          "macd_hist": -0.00029247499701007436,
+          "atr_14": 0.007511641419934531,
+          "adx_14": 22.240161052345588,
+          "bb_high": 0.7952693015316845,
+          "bb_low": 0.7666159984683154,
+          "bb_mid": 0.78094265,
+          "bb_width": 0.03669066232119492
         },
         "signals": {
           "rsi_zone": "neutral",
@@ -86,65 +58,38 @@
           "trend": "choppy",
           "breakout_up": false,
           "breakout_dn": false,
-          "ema_state": "bullish"
-        }
-      }
-    },
-    "1INCH/USD": {
-      "1h": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.2635,
-          "high": 0.2635,
-          "low": 0.2635,
-          "close": 0.2635,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.26522714357966226,
-          "ema_50": 0.27077892064938724,
-          "rsi_14": 41.29753487703343,
-          "macd": -0.002077450166697914,
-          "macd_signal": -0.0029568579249191996,
-          "macd_hist": 0.0008794077582212857,
-          "atr_14": 0.0021215303870261836,
-          "adx_14": 27.51093472266734,
-          "bb_high": 0.26803712953917186,
-          "bb_low": 0.25884287046082816,
-          "bb_mid": 0.26344,
-          "bb_width": 0.034900770871332004
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "trending",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
         }
       },
       "15m": {
         "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.2635,
-          "high": 0.2635,
-          "low": 0.2635,
-          "close": 0.2635,
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 0.771211,
+          "high": 0.771211,
+          "low": 0.771211,
+          "close": 0.771211,
           "volume": 0.0
         },
         "indicators": {
-          "ema_20": 0.26436483916194997,
-          "ema_50": 0.2642008509688958,
-          "rsi_14": 45.63163141170447,
-          "macd": 0.00010544819472380063,
-          "macd_signal": 0.000429518183471625,
-          "macd_hist": -0.00032406998874782436,
-          "atr_14": 0.0008347323403414984,
-          "adx_14": 17.752005652172375,
-          "bb_high": 0.26754102058103857,
-          "bb_low": 0.2617589794189614,
-          "bb_mid": 0.26465,
-          "bb_width": 0.021847878942290365
+          "ema_20": 0.7745964579496509,
+          "ema_50": 0.7786977038402618,
+          "ema_9": 0.7717846084645256,
+          "ema_21": 0.7747849875945815,
+          "ema_200": 0.7904952987763876,
+          "vol_sma_20": 3398.602525379503,
+          "rsi_14": 42.163995029696956,
+          "macd": -0.0029269990987704775,
+          "macd_signal": -0.0023228126895152223,
+          "macd_hist": -0.0006041864092552552,
+          "atr_14": 0.0027789118391382353,
+          "adx_14": 15.582233198897898,
+          "bb_high": 0.7867336563186335,
+          "bb_low": 0.7658256436813665,
+          "bb_mid": 0.77627965,
+          "bb_width": 0.026933609089542586
         },
         "signals": {
           "rsi_zone": "neutral",
@@ -152,495 +97,319 @@
           "trend": "choppy",
           "breakout_up": false,
           "breakout_dn": false,
-          "ema_state": "bullish"
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
         }
       }
     },
-    "A/EUR": {
+    "AI16Z/USDT": {
       "1h": {
         "last_candle": {
           "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.4545,
-          "high": 0.4545,
-          "low": 0.4545,
-          "close": 0.4545,
+          "open": 0.1267,
+          "high": 0.1267,
+          "low": 0.1263,
+          "close": 0.1263,
+          "volume": 354.74275
+        },
+        "indicators": {
+          "ema_20": 0.13064854174776686,
+          "ema_50": 0.1351288483274748,
+          "ema_9": 0.12796129167213444,
+          "ema_21": 0.13088613639433364,
+          "ema_200": 0.13304199638290642,
+          "vol_sma_20": 23149.014639500005,
+          "rsi_14": 31.745430346994766,
+          "macd": -0.003320891729231723,
+          "macd_signal": -0.0033332611790298406,
+          "macd_hist": 1.236944979811751e-05,
+          "atr_14": 0.0016899304022431015,
+          "adx_14": 31.882451292489765,
+          "bb_high": 0.13571052814445914,
+          "bb_low": 0.12434947185554089,
+          "bb_mid": 0.13003,
+          "bb_width": 0.08737257778142155
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "bullish",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      },
+      "15m": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 0.1263,
+          "high": 0.1263,
+          "low": 0.1263,
+          "close": 0.1263,
           "volume": 0.0
         },
         "indicators": {
-          "ema_20": 0.45929978327150406,
-          "ema_50": 0.4595915755606603,
-          "rsi_14": 44.25079461253737,
-          "macd": -0.000361764064462311,
-          "macd_signal": -0.00027379100789095716,
-          "macd_hist": -8.797305657135386e-05,
-          "atr_14": 0.0034219540505043217,
-          "adx_14": 12.694833907529672,
-          "bb_high": 0.4721169275171764,
-          "bb_low": 0.4482630724828236,
-          "bb_mid": 0.46019,
-          "bb_width": 0.051834796571748144
+          "ema_20": 0.1271509727261694,
+          "ema_50": 0.12894609387351633,
+          "ema_9": 0.12633561748801386,
+          "ema_21": 0.1272160199995091,
+          "ema_200": 0.13504510405773376,
+          "vol_sma_20": 2220.6989855,
+          "rsi_14": 34.70257162338983,
+          "macd": -0.0009538265647660304,
+          "macd_signal": -0.0008888331799090699,
+          "macd_hist": -6.49933848569606e-05,
+          "atr_14": 0.00037192054503675664,
+          "adx_14": 33.2879895333006,
+          "bb_high": 0.13023142368410956,
+          "bb_low": 0.12469857631589043,
+          "bb_mid": 0.127465,
+          "bb_width": 0.04340679691067453
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      }
+    },
+    "ALGO/USDT": {
+      "1h": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:00:00+00:00",
+          "open": 0.25076,
+          "high": 0.25159,
+          "low": 0.25,
+          "close": 0.25159,
+          "volume": 917.39928773
+        },
+        "indicators": {
+          "ema_20": 0.25645872977874623,
+          "ema_50": 0.26086074088271577,
+          "ema_9": 0.2540415225551236,
+          "ema_21": 0.25667406719392555,
+          "ema_200": 0.25819965532723294,
+          "vol_sma_20": 10536.271204774,
+          "rsi_14": 35.617623496821324,
+          "macd": -0.003004650886511362,
+          "macd_signal": -0.003004178267108237,
+          "macd_hist": -4.726194031247702e-07,
+          "atr_14": 0.002791366729141375,
+          "adx_14": 26.478612697520497,
+          "bb_high": 0.2607464815066823,
+          "bb_low": 0.2504725184933177,
+          "bb_mid": 0.2556095,
+          "bb_width": 0.040193979540527974
         },
         "signals": {
           "rsi_zone": "neutral",
           "macd_cross": "bearish",
-          "trend": "choppy",
+          "trend": "trending",
           "breakout_up": false,
           "breakout_dn": false,
-          "ema_state": "bearish"
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
         }
       },
       "15m": {
         "last_candle": {
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 0.25158,
+          "high": 0.25159,
+          "low": 0.25158,
+          "close": 0.25159,
+          "volume": 206.25380144
+        },
+        "indicators": {
+          "ema_20": 0.2530867998196802,
+          "ema_50": 0.25488900399197606,
+          "ema_9": 0.25184987648580814,
+          "ema_21": 0.25316877611724825,
+          "ema_200": 0.2606381700161257,
+          "vol_sma_20": 1127.1929780605,
+          "rsi_14": 40.279804427817545,
+          "macd": -0.0012774031861007007,
+          "macd_signal": -0.0009971489308655513,
+          "macd_hist": -0.0002802542552351494,
+          "atr_14": 0.0009178013082655892,
+          "adx_14": 29.432019965747827,
+          "bb_high": 0.2579755464072856,
+          "bb_low": 0.24948545359271437,
+          "bb_mid": 0.25373049999999997,
+          "bb_width": 0.033461065242732825
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      }
+    },
+    "APE/USDT": {
+      "1h": {
+        "last_candle": {
           "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.4545,
-          "high": 0.4545,
-          "low": 0.4545,
-          "close": 0.4545,
+          "open": 0.6042,
+          "high": 0.6042,
+          "low": 0.6042,
+          "close": 0.6042,
           "volume": 0.0
         },
         "indicators": {
-          "ema_20": 0.4595680391779006,
-          "ema_50": 0.4594802339205168,
-          "rsi_14": 29.771419168259982,
-          "macd": -0.0008165033068581184,
-          "macd_signal": 0.0005757178430610162,
-          "macd_hist": -0.0013922211499191347,
-          "atr_14": 0.0009878962210042124,
-          "adx_14": 47.40333681389414,
-          "bb_high": 0.47252867906772555,
-          "bb_low": 0.4494213209322745,
-          "bb_mid": 0.460975,
-          "bb_width": 0.05012713950962864
+          "ema_20": 0.6142560566479546,
+          "ema_50": 0.6222372876659396,
+          "ema_9": 0.6098023065724474,
+          "ema_21": 0.6146469751447136,
+          "ema_200": 0.6069196537298603,
+          "vol_sma_20": 32.299330545000004,
+          "rsi_14": 15.086784668514369,
+          "macd": -0.00546390350690884,
+          "macd_signal": -0.005273836000399568,
+          "macd_hist": -0.00019006750650927239,
+          "atr_14": 0.0014763456011825538,
+          "adx_14": 48.18064791652913,
+          "bb_high": 0.6219393838994477,
+          "bb_low": 0.6058306161005523,
+          "bb_mid": 0.613885,
+          "bb_width": 0.026240692961866412
         },
         "signals": {
           "rsi_zone": "oversold",
-          "macd_cross": "none",
-          "trend": "trending",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bullish"
-        }
-      }
-    },
-    "A/USD": {
-      "1h": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.5249,
-          "high": 0.5249,
-          "low": 0.5249,
-          "close": 0.5249,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.531986947283756,
-          "ema_50": 0.5335758446259843,
-          "rsi_14": 44.41061327981357,
-          "macd": -0.0011539835237985852,
-          "macd_signal": -0.0007680180781774698,
-          "macd_hist": -0.00038596544562111536,
-          "atr_14": 0.0062151296972119295,
-          "adx_14": 15.775429905816415,
-          "bb_high": 0.5472337172046485,
-          "bb_low": 0.5174562827953516,
-          "bb_mid": 0.5323450000000001,
-          "bb_width": 0.055936346559650074
-        },
-        "signals": {
-          "rsi_zone": "neutral",
           "macd_cross": "bearish",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      },
-      "15m": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.5249,
-          "high": 0.5249,
-          "low": 0.5249,
-          "close": 0.5249,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.5315342485161377,
-          "ema_50": 0.5324842412104231,
-          "rsi_14": 33.27525650028926,
-          "macd": -0.0024895615834945595,
-          "macd_signal": -0.0007342647204670548,
-          "macd_hist": -0.0017552968630275047,
-          "atr_14": 0.0018052624264568045,
-          "adx_14": 23.86536889902942,
-          "bb_high": 0.5479862809620144,
-          "bb_low": 0.5205837190379856,
-          "bb_mid": 0.534285,
-          "bb_width": 0.05128828607209409
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      }
-    },
-    "AAVE/EUR": {
-      "1h": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 253.95,
-          "high": 253.95,
-          "low": 253.95,
-          "close": 253.95,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 255.84923274067253,
-          "ema_50": 256.936914692776,
-          "rsi_14": 41.42945229002487,
-          "macd": -1.1205134844497024,
-          "macd_signal": -1.1112065613074744,
-          "macd_hist": -0.00930692314222803,
-          "atr_14": 2.032683837664785,
-          "adx_14": 10.878141037370328,
-          "bb_high": 258.741443326824,
-          "bb_low": 252.10255667317603,
-          "bb_mid": 255.42200000000003,
-          "bb_width": 0.025991835682313974
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "bearish",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      },
-      "15m": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 253.95,
-          "high": 253.95,
-          "low": 253.95,
-          "close": 253.95,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 254.80149023512433,
-          "ema_50": 255.48585539959265,
-          "rsi_14": 42.868258969332175,
-          "macd": -0.5944023280076749,
-          "macd_signal": -0.45780031292649126,
-          "macd_hist": -0.13660201508118364,
-          "atr_14": 0.7381551373553893,
-          "adx_14": 18.432636217688366,
-          "bb_high": 256.8947431692933,
-          "bb_low": 253.07925683070673,
-          "bb_mid": 254.987,
-          "bb_width": 0.014963454366640523
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      }
-    },
-    "AAVE/USD": {
-      "1h": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 294.38,
-          "high": 294.38,
-          "low": 294.13,
-          "close": 294.14,
-          "volume": 3.1153367
-        },
-        "indicators": {
-          "ema_20": 297.61471184810574,
-          "ema_50": 299.28843309988423,
-          "rsi_14": 40.46346057493423,
-          "macd": -1.4697981002620395,
-          "macd_signal": -1.4632207152664225,
-          "macd_hist": -0.006577384995616997,
-          "atr_14": 3.032547134929884,
-          "adx_14": 13.000039795607604,
-          "bb_high": 301.3220113481522,
-          "bb_low": 292.5099886518478,
-          "bb_mid": 296.916,
-          "bb_width": 0.02967850400889288
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "bearish",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      },
-      "15m": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 294.38,
-          "high": 294.38,
-          "low": 294.13,
-          "close": 294.14,
-          "volume": 3.1153367
-        },
-        "indicators": {
-          "ema_20": 296.2257622700459,
-          "ema_50": 297.09106850116973,
-          "rsi_14": 40.272778294463286,
-          "macd": -0.8670107401044334,
-          "macd_signal": -0.5394927198665241,
-          "macd_hist": -0.3275180202379092,
-          "atr_14": 1.1726060481079632,
-          "adx_14": 16.315528894158586,
-          "bb_high": 299.7870468573861,
-          "bb_low": 293.4539531426139,
-          "bb_mid": 296.6205,
-          "bb_width": 0.021350829476628183
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      }
-    },
-    "AB/EUR": {
-      "1h": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.007044,
-          "high": 0.007044,
-          "low": 0.007044,
-          "close": 0.007044,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.007032887528931096,
-          "ema_50": 0.0070189857098329825,
-          "rsi_14": 61.53121946875251,
-          "macd": 8.33679760202724e-06,
-          "macd_signal": 8.799497172004336e-06,
-          "macd_hist": -4.6269956997709513e-07,
-          "atr_14": 8.297681428823018e-06,
-          "adx_14": 24.471879714749075,
-          "bb_high": 0.0070542055628799345,
-          "bb_low": 0.007020494437120066,
-          "bb_mid": 0.00703735,
-          "bb_width": 0.0047903153544826245
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bullish"
-        }
-      },
-      "15m": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.007044,
-          "high": 0.007044,
-          "low": 0.007044,
-          "close": 0.007044,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.0070372124714979875,
-          "ema_50": 0.007034454989687465,
-          "rsi_14": 60.79336032739399,
-          "macd": 2.2897281774861278e-06,
-          "macd_signal": 8.781897094038822e-07,
-          "macd_hist": 1.4115384680822456e-06,
-          "atr_14": 2.916896435225713e-06,
-          "adx_14": 22.545292965072502,
-          "bb_high": 0.0070514426156198145,
-          "bb_low": 0.007021657384380187,
-          "bb_mid": 0.007036550000000001,
-          "bb_width": 0.004232931086914372
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bullish"
-        }
-      }
-    },
-    "AB/USD": {
-      "1h": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.008182,
-          "high": 0.008182,
-          "low": 0.008182,
-          "close": 0.008182,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.00816746481362506,
-          "ema_50": 0.008170821004112289,
-          "rsi_14": 55.22079315724205,
-          "macd": 5.254385254584854e-07,
-          "macd_signal": -1.0485227045094875e-06,
-          "macd_hist": 1.573961229967973e-06,
-          "atr_14": 1.9476264967711876e-05,
-          "adx_14": 27.25003152886838,
-          "bb_high": 0.008191551565607037,
-          "bb_low": 0.008142048434392963,
-          "bb_mid": 0.0081668,
-          "bb_width": 0.006061508940352853
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "trending",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      },
-      "15m": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.008182,
-          "high": 0.008182,
-          "low": 0.008182,
-          "close": 0.008182,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.008167065631781682,
-          "ema_50": 0.008166515846233216,
-          "rsi_14": 57.92780814600558,
-          "macd": 1.2998149635165546e-06,
-          "macd_signal": -6.921593322821922e-07,
-          "macd_hist": 1.9919742957987468e-06,
-          "atr_14": 8.477088823619784e-06,
-          "adx_14": 16.246645400358236,
-          "bb_high": 0.008192486161329905,
-          "bb_low": 0.008141013838670096,
-          "bb_mid": 0.00816675,
-          "bb_width": 0.006302669073965643
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bullish"
-        }
-      }
-    },
-    "ACA/EUR": {
-      "1h": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.02438,
-          "high": 0.02438,
-          "low": 0.02438,
-          "close": 0.02438,
-          "volume": 1085.6247
-        },
-        "indicators": {
-          "ema_20": 0.02535660857574272,
-          "ema_50": 0.025130042070818644,
-          "rsi_14": 41.116188238083346,
-          "macd": 0.0001367569342304413,
-          "macd_signal": 0.00019208273008002432,
-          "macd_hist": -5.5325795849583016e-05,
-          "atr_14": 0.00040154210981234207,
-          "adx_14": 22.420156509080645,
-          "bb_high": 0.02711965734105253,
-          "bb_low": 0.023676342658947466,
-          "bb_mid": 0.025397999999999997,
-          "bb_width": 0.13557424529904177
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "bearish",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bullish"
-        }
-      },
-      "15m": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.02438,
-          "high": 0.02438,
-          "low": 0.02438,
-          "close": 0.02438,
-          "volume": 1085.6247
-        },
-        "indicators": {
-          "ema_20": 0.025663312695346073,
-          "ema_50": 0.025538345118451437,
-          "rsi_14": 8.82404667956051,
-          "macd": -4.383536473098401e-05,
-          "macd_signal": 7.499204220552718e-05,
-          "macd_hist": -0.00011882740693651119,
-          "atr_14": 0.00011897393057776662,
-          "adx_14": 47.16840861093029,
-          "bb_high": 0.026401345106924712,
-          "bb_low": 0.02512965489307528,
-          "bb_mid": 0.025765499999999997,
-          "bb_width": 0.04935631809394075
-        },
-        "signals": {
-          "rsi_zone": "oversold",
-          "macd_cross": "none",
           "trend": "trending",
           "breakout_up": false,
           "breakout_dn": true,
-          "ema_state": "bullish"
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
         }
-      }
-    },
-    "ACA/USD": {
-      "1h": {
+      },
+      "15m": {
         "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.0294,
-          "high": 0.0294,
-          "low": 0.0294,
-          "close": 0.0294,
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 0.6042,
+          "high": 0.6042,
+          "low": 0.6042,
+          "close": 0.6042,
           "volume": 0.0
         },
         "indicators": {
-          "ema_20": 0.028996080650858697,
-          "ema_50": 0.028945593302987332,
-          "rsi_14": 60.61335222693575,
-          "macd": 0.0001234549897784036,
-          "macd_signal": -1.0621631113563928e-05,
-          "macd_hist": 0.00013407662089196754,
-          "atr_14": 0.00020964238491782318,
-          "adx_14": 31.817754123381235,
-          "bb_high": 0.03001318356422954,
-          "bb_low": 0.027415816435770467,
-          "bb_mid": 0.028714500000000004,
-          "bb_width": 0.09045489660133635
+          "ema_20": 0.6090087729392919,
+          "ema_50": 0.6122238548768032,
+          "ema_9": 0.6066942508296325,
+          "ema_21": 0.609153805842864,
+          "ema_200": 0.6250494110631267,
+          "vol_sma_20": 10.68147014,
+          "rsi_14": 0.35690785364847954,
+          "macd": -0.002283106542144031,
+          "macd_signal": -0.0015442307540578788,
+          "macd_hist": -0.0007388757880861523,
+          "atr_14": 0.0004432545542872582,
+          "adx_14": 89.4330074702334,
+          "bb_high": 0.6164817930687704,
+          "bb_low": 0.6033182069312296,
+          "bb_mid": 0.6099,
+          "bb_width": 0.021583187633285393
+        },
+        "signals": {
+          "rsi_zone": "oversold",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      }
+    },
+    "ATOM/USDT": {
+      "1h": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:00:00+00:00",
+          "open": 4.4768,
+          "high": 4.4947,
+          "low": 4.4768,
+          "close": 4.4947,
+          "volume": 31.6439565
+        },
+        "indicators": {
+          "ema_20": 4.528746145106314,
+          "ema_50": 4.574102187867,
+          "ema_9": 4.507821083566299,
+          "ema_21": 4.53083345795913,
+          "ema_200": 4.503839019217252,
+          "vol_sma_20": 275.27568172499997,
+          "rsi_14": 40.14240265296361,
+          "macd": -0.02818223418113064,
+          "macd_signal": -0.030357562999921213,
+          "macd_hist": 0.002175328818790574,
+          "atr_14": 0.028336338460869352,
+          "adx_14": 18.572199994806123,
+          "bb_high": 4.584435805860748,
+          "bb_low": 4.4618641941392525,
+          "bb_mid": 4.52315,
+          "bb_width": 0.027098728037207573
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "choppy",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      },
+      "15m": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 4.492,
+          "high": 4.4947,
+          "low": 4.492,
+          "close": 4.4947,
+          "volume": 20.85551943
+        },
+        "indicators": {
+          "ema_20": 4.501470281091432,
+          "ema_50": 4.515017058001592,
+          "ema_9": 4.4931180344767885,
+          "ema_21": 4.502018761102678,
+          "ema_200": 4.576729426057414,
+          "vol_sma_20": 20.750823069,
+          "rsi_14": 43.242545737433744,
+          "macd": -0.008590487601431107,
+          "macd_signal": -0.006570219545049496,
+          "macd_hist": -0.0020202680563816107,
+          "atr_14": 0.007587052070341766,
+          "adx_14": 25.135247775010182,
+          "bb_high": 4.538275553161743,
+          "bb_low": 4.474324446838256,
+          "bb_mid": 4.5062999999999995,
+          "bb_width": 0.014191488876347854
         },
         "signals": {
           "rsi_zone": "neutral",
@@ -648,30 +417,558 @@
           "trend": "trending",
           "breakout_up": false,
           "breakout_dn": false,
-          "ema_state": "bullish"
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      }
+    },
+    "AVAX/USDT": {
+      "1h": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:00:00+00:00",
+          "open": 22.78,
+          "high": 22.83,
+          "low": 22.78,
+          "close": 22.83,
+          "volume": 18.49143322
+        },
+        "indicators": {
+          "ema_20": 23.163462423293275,
+          "ema_50": 23.454517966897615,
+          "ema_9": 23.016561293916734,
+          "ema_21": 23.177402119178737,
+          "ema_200": 23.182004205184878,
+          "vol_sma_20": 84.83655423649982,
+          "rsi_14": 39.18732090760981,
+          "macd": -0.19132357615719542,
+          "macd_signal": -0.2021449933931585,
+          "macd_hist": 0.010821417235963082,
+          "atr_14": 0.21576049422106783,
+          "adx_14": 11.8625229825814,
+          "bb_high": 23.595969472703338,
+          "bb_low": 22.64603052729666,
+          "bb_mid": 23.121,
+          "bb_width": 0.04108554757176068
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "choppy",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
         }
       },
       "15m": {
         "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.0294,
-          "high": 0.0294,
-          "low": 0.0294,
-          "close": 0.0294,
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 22.83,
+          "high": 22.83,
+          "low": 22.83,
+          "close": 22.83,
           "volume": 0.0
         },
         "indicators": {
-          "ema_20": 0.029291982505100664,
-          "ema_50": 0.02899030400183403,
-          "rsi_14": 92.58551589767481,
-          "macd": 0.00017040042104101566,
-          "macd_signal": 0.00021774837573356717,
-          "macd_hist": -4.7347954692551514e-05,
-          "atr_14": 1.9295337715847536e-05,
-          "adx_14": 76.15083998819914,
-          "bb_high": 0.0294,
-          "bb_low": 0.0294,
-          "bb_mid": 0.0294,
+          "ema_20": 22.96893159260249,
+          "ema_50": 23.056426576355875,
+          "ema_9": 22.91324620762893,
+          "ema_21": 22.97214168515294,
+          "ema_200": 23.415174766481346,
+          "vol_sma_20": 25.329464833499998,
+          "rsi_14": 39.65409353305149,
+          "macd": -0.052633564246772124,
+          "macd_signal": -0.03218049274691569,
+          "macd_hist": -0.020453071499856437,
+          "atr_14": 0.06632998664969285,
+          "adx_14": 18.539520041539763,
+          "bb_high": 23.20092667825569,
+          "bb_low": 22.80207332174431,
+          "bb_mid": 23.0015,
+          "bb_width": 0.017340319392708355
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "choppy",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      }
+    },
+    "BCH/USDT": {
+      "1h": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:00:00+00:00",
+          "open": 590.15,
+          "high": 590.15,
+          "low": 587.28,
+          "close": 589.16,
+          "volume": 0.96855742
+        },
+        "indicators": {
+          "ema_20": 589.5063820086463,
+          "ema_50": 584.3796501892253,
+          "ema_9": 591.378184181296,
+          "ema_21": 589.2891809457021,
+          "ema_200": 574.2635526796162,
+          "vol_sma_20": 6.840069610000002,
+          "rsi_14": 51.636395328508925,
+          "macd": 2.8393767838879285,
+          "macd_signal": 3.4713284909656115,
+          "macd_hist": -0.631951707077683,
+          "atr_14": 4.594655149370965,
+          "adx_14": 39.998632713434,
+          "bb_high": 601.98694294393,
+          "bb_low": 577.99305705607,
+          "bb_mid": 589.99,
+          "bb_width": 0.040668292492855744
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bullish",
+          "ema_alignment": "bullish",
+          "long_regime": "above_200",
+          "scalp_ema": "bullish"
+        }
+      },
+      "15m": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 589.16,
+          "high": 589.16,
+          "low": 589.16,
+          "close": 589.16,
+          "volume": 0.0
+        },
+        "indicators": {
+          "ema_20": 591.463699579744,
+          "ema_50": 590.9632841386206,
+          "ema_9": 590.4693643987554,
+          "ema_21": 591.5024017587359,
+          "ema_200": 582.8583889747216,
+          "vol_sma_20": 1.0049916984999998,
+          "rsi_14": 41.50464184009844,
+          "macd": -0.7379646568718954,
+          "macd_signal": -0.2117851532926825,
+          "macd_hist": -0.526179503579213,
+          "atr_14": 1.3968549640912842,
+          "adx_14": 22.123344653676366,
+          "bb_high": 595.1582753347187,
+          "bb_low": 588.2137246652813,
+          "bb_mid": 591.686,
+          "bb_width": 0.01173688522195451
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "choppy",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bullish",
+          "ema_alignment": "bullish",
+          "long_regime": "above_200",
+          "scalp_ema": "bearish"
+        }
+      }
+    },
+    "BERA/USDT": {
+      "1h": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:00:00+00:00",
+          "open": 1.903,
+          "high": 1.903,
+          "low": 1.903,
+          "close": 1.903,
+          "volume": 0.0
+        },
+        "indicators": {
+          "ema_20": 1.9555418988674782,
+          "ema_50": 1.9940015507659643,
+          "ema_9": 1.9312451730295581,
+          "ema_21": 1.9575272690733838,
+          "ema_200": 1.957126438821482,
+          "vol_sma_20": 292.0445315,
+          "rsi_14": 24.636214373813345,
+          "macd": -0.028408686282278994,
+          "macd_signal": -0.026123817758723432,
+          "macd_hist": -0.0022848685235555624,
+          "atr_14": 0.010974168931647805,
+          "adx_14": 33.487540553047594,
+          "bb_high": 2.0117768979317954,
+          "bb_low": 1.8988231020682047,
+          "bb_mid": 1.9553,
+          "bb_width": 0.05776801302285617
+        },
+        "signals": {
+          "rsi_zone": "oversold",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      },
+      "15m": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 1.903,
+          "high": 1.903,
+          "low": 1.903,
+          "close": 1.903,
+          "volume": 0.0
+        },
+        "indicators": {
+          "ema_20": 1.9230606984813465,
+          "ema_50": 1.9426260653158491,
+          "ema_9": 1.9104740242882097,
+          "ema_21": 1.9239544521367147,
+          "ema_200": 1.995132457866264,
+          "vol_sma_20": 51.783293,
+          "rsi_14": 11.507388643584093,
+          "macd": -0.013547476098291433,
+          "macd_signal": -0.011249893949647054,
+          "macd_hist": -0.002297582148644379,
+          "atr_14": 0.002626522347663574,
+          "adx_14": 62.24882715436602,
+          "bb_high": 1.9652141739587956,
+          "bb_low": 1.8898858260412037,
+          "bb_mid": 1.9275499999999997,
+          "bb_width": 0.03907984120650148
+        },
+        "signals": {
+          "rsi_zone": "oversold",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      }
+    },
+    "BNB/USDT": {
+      "1h": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:00:00+00:00",
+          "open": 802.0,
+          "high": 802.0,
+          "low": 787.34,
+          "close": 799.02,
+          "volume": 0.66252
+        },
+        "indicators": {
+          "ema_20": 805.9950860582837,
+          "ema_50": 806.0292491802984,
+          "ema_9": 804.1131983536526,
+          "ema_21": 806.0754724449567,
+          "ema_200": 789.7211845424018,
+          "vol_sma_20": 1.745007,
+          "rsi_14": 41.798819763193414,
+          "macd": -1.455294964962377,
+          "macd_signal": -0.3903918265604457,
+          "macd_hist": -1.0649031384019314,
+          "atr_14": 5.272498158212106,
+          "adx_14": 16.433816965819606,
+          "bb_high": 816.9752940068671,
+          "bb_low": 796.945705993133,
+          "bb_mid": 806.9605,
+          "bb_width": 0.024821026572842356
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "choppy",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "above_200",
+          "scalp_ema": "bearish"
+        }
+      },
+      "15m": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 799.02,
+          "high": 799.02,
+          "low": 799.02,
+          "close": 799.02,
+          "volume": 0.0
+        },
+        "indicators": {
+          "ema_20": 803.1515733639663,
+          "ema_50": 805.5755867814077,
+          "ema_9": 800.5316356607248,
+          "ema_21": 803.3139295273154,
+          "ema_200": 806.3139122193561,
+          "vol_sma_20": 0.043914999999999996,
+          "rsi_14": 28.13426349274573,
+          "macd": -2.5732628377744504,
+          "macd_signal": -1.8360098766455857,
+          "macd_hist": -0.7372529611288647,
+          "atr_14": 1.7495718250887435,
+          "adx_14": 33.37548759236066,
+          "bb_high": 813.4945249705539,
+          "bb_low": 795.6434750294462,
+          "bb_mid": 804.5690000000001,
+          "bb_width": 0.022187096372228737
+        },
+        "signals": {
+          "rsi_zone": "oversold",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      }
+    },
+    "BTC/USDT": {
+      "1h": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:00:00+00:00",
+          "open": 118467.2,
+          "high": 118534.8,
+          "low": 118283.0,
+          "close": 118505.9,
+          "volume": 4.21820567
+        },
+        "indicators": {
+          "ema_20": 119014.85921156766,
+          "ema_50": 119035.06024123209,
+          "ema_9": 118717.30857639638,
+          "ema_21": 119034.39222655982,
+          "ema_200": 117197.48523956502,
+          "vol_sma_20": 5.8067284945,
+          "rsi_14": 40.32860209178131,
+          "macd": -300.40169146098197,
+          "macd_signal": -248.3906889474017,
+          "macd_hist": -52.01100251358025,
+          "atr_14": 585.0670043272637,
+          "adx_14": 36.2678447603837,
+          "bb_high": 119744.2917293299,
+          "bb_low": 118163.51827067007,
+          "bb_mid": 118953.90499999998,
+          "bb_width": 0.013288958093976181
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "above_200",
+          "scalp_ema": "bearish"
+        }
+      },
+      "15m": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 118490.9,
+          "high": 118505.9,
+          "low": 118490.9,
+          "close": 118505.9,
+          "volume": 0.01848229
+        },
+        "indicators": {
+          "ema_20": 118603.85176499836,
+          "ema_50": 118838.96375043807,
+          "ema_9": 118482.1888723812,
+          "ema_21": 118612.90592590644,
+          "ema_200": 119227.08667276739,
+          "vol_sma_20": 3.8035748205000006,
+          "rsi_14": 45.1095768079169,
+          "macd": -136.30456702783704,
+          "macd_signal": -121.0134015319195,
+          "macd_hist": -15.29116549591754,
+          "atr_14": 219.10443092755665,
+          "adx_14": 49.30931613056672,
+          "bb_high": 119217.15150219892,
+          "bb_low": 118145.38849780106,
+          "bb_mid": 118681.26999999999,
+          "bb_width": 0.00903059938942225
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      }
+    },
+    "CRO/USDT": {
+      "1h": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:00:00+00:00",
+          "open": 0.16863,
+          "high": 0.16863,
+          "low": 0.16863,
+          "close": 0.16863,
+          "volume": 0.0
+        },
+        "indicators": {
+          "ema_20": 0.1679098053556408,
+          "ema_50": 0.16583258762704284,
+          "ema_9": 0.1682917953141697,
+          "ema_21": 0.16786426566989848,
+          "ema_200": 0.15391421365527522,
+          "vol_sma_20": 1072.7758655,
+          "rsi_14": 54.73018351683823,
+          "macd": 0.000595045779968717,
+          "macd_signal": 0.0006659378857491026,
+          "macd_hist": -7.089210578038556e-05,
+          "atr_14": 0.0012152809904884033,
+          "adx_14": 22.848489276152094,
+          "bb_high": 0.1706951398867878,
+          "bb_low": 0.16486886011321222,
+          "bb_mid": 0.16778200000000001,
+          "bb_width": 0.03472529695423574
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "choppy",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bullish",
+          "ema_alignment": "bullish",
+          "long_regime": "above_200",
+          "scalp_ema": "bullish"
+        }
+      },
+      "15m": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 0.16863,
+          "high": 0.16863,
+          "low": 0.16863,
+          "close": 0.16863,
+          "volume": 0.0
+        },
+        "indicators": {
+          "ema_20": 0.1683386739676396,
+          "ema_50": 0.168038748862015,
+          "ema_9": 0.1685542591947508,
+          "ema_21": 0.1683243327720701,
+          "ema_200": 0.16614794300933564,
+          "vol_sma_20": 34.28051350000018,
+          "rsi_14": 61.406752955754115,
+          "macd": 0.00022477162453318766,
+          "macd_signal": 0.00017816646790927418,
+          "macd_hist": 4.660515662391348e-05,
+          "atr_14": 0.00012945138871798512,
+          "adx_14": 24.155694129503054,
+          "bb_high": 0.16936045791592896,
+          "bb_low": 0.16696054208407102,
+          "bb_mid": 0.1681605,
+          "bb_width": 0.01427157883009355
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "choppy",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bullish",
+          "ema_alignment": "bullish",
+          "long_regime": "above_200",
+          "scalp_ema": "bullish"
+        }
+      }
+    },
+    "DAI/USDT": {
+      "1h": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:00:00+00:00",
+          "open": 1.00031,
+          "high": 1.00031,
+          "low": 1.00031,
+          "close": 1.00031,
+          "volume": 0.0
+        },
+        "indicators": {
+          "ema_20": 1.0001095351179257,
+          "ema_50": 0.9999095651578016,
+          "ema_9": 1.0002727592933558,
+          "ema_21": 1.0000969305004614,
+          "ema_200": 0.9998664284422277,
+          "vol_sma_20": 20.339725499999908,
+          "rsi_14": 63.26080116429283,
+          "macd": 0.00018604188397586263,
+          "macd_signal": 0.00017739476153944076,
+          "macd_hist": 8.647122436421868e-06,
+          "atr_14": 9.388009175281279e-05,
+          "adx_14": 26.045918715780225,
+          "bb_high": 1.00083296164283,
+          "bb_low": 0.9993730383571701,
+          "bb_mid": 1.000103,
+          "bb_width": 0.0014597729290482223
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bullish",
+          "ema_alignment": "bullish",
+          "long_regime": "above_200",
+          "scalp_ema": "bullish"
+        }
+      },
+      "15m": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 1.00031,
+          "high": 1.00031,
+          "low": 1.00031,
+          "close": 1.00031,
+          "volume": 0.0
+        },
+        "indicators": {
+          "ema_20": 1.0003058725931673,
+          "ema_50": 1.000209886359142,
+          "ema_9": 1.0003099893004537,
+          "ema_21": 1.000304733471235,
+          "ema_200": 0.9999389315792142,
+          "vol_sma_20": 0.0,
+          "rsi_14": 83.70083154618499,
+          "macd": 1.3513291489131163e-05,
+          "macd_signal": 1.955820973967892e-05,
+          "macd_hist": -6.044918250547758e-06,
+          "atr_14": 1.839855008457903e-06,
+          "adx_14": 68.07789864463533,
+          "bb_high": 1.00031,
+          "bb_low": 1.00031,
+          "bb_mid": 1.00031,
           "bb_width": 0.0
         },
         "signals": {
@@ -680,33 +977,40 @@
           "trend": "trending",
           "breakout_up": false,
           "breakout_dn": false,
-          "ema_state": "bullish"
+          "ema_state": "bullish",
+          "ema_alignment": "bullish",
+          "long_regime": "above_200",
+          "scalp_ema": "bullish"
         }
       }
     },
-    "ACH/EUR": {
+    "DOGE/USDT": {
       "1h": {
         "last_candle": {
           "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.01854,
-          "high": 0.01854,
-          "low": 0.01854,
-          "close": 0.01854,
-          "volume": 0.0
+          "open": 0.22079,
+          "high": 0.22096,
+          "low": 0.21891,
+          "close": 0.22092,
+          "volume": 219937.0402107
         },
         "indicators": {
-          "ema_20": 0.018716921258054468,
-          "ema_50": 0.019021560739479283,
-          "rsi_14": 32.03768514553671,
-          "macd": -0.00022643532910196496,
-          "macd_signal": -0.00025898821559348727,
-          "macd_hist": 3.2552886491522316e-05,
-          "atr_14": 6.887031470169093e-05,
-          "adx_14": 34.369350729318036,
-          "bb_high": 0.019350058986157735,
-          "bb_low": 0.01801494101384226,
-          "bb_mid": 0.018682499999999998,
-          "bb_width": 0.07146356067525626
+          "ema_20": 0.2252290644546403,
+          "ema_50": 0.22867687892271252,
+          "ema_9": 0.22307335526872488,
+          "ema_21": 0.22540971310508584,
+          "ema_200": 0.2220743087163576,
+          "vol_sma_20": 85615.60899871499,
+          "rsi_14": 34.442185374874526,
+          "macd": -0.0025690888932012046,
+          "macd_signal": -0.002435707015406003,
+          "macd_hist": -0.00013338187779520167,
+          "atr_14": 0.0025013163606416116,
+          "adx_14": 31.198236661205645,
+          "bb_high": 0.23114269172891852,
+          "bb_low": 0.21928330827108153,
+          "bb_mid": 0.22521300000000002,
+          "bb_width": 0.05265852085730837
         },
         "signals": {
           "rsi_zone": "neutral",
@@ -714,31 +1018,79 @@
           "trend": "trending",
           "breakout_up": false,
           "breakout_dn": false,
-          "ema_state": "bearish"
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
         }
       },
       "15m": {
         "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.01854,
-          "high": 0.01854,
-          "low": 0.01854,
-          "close": 0.01854,
-          "volume": 0.0
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 0.22066,
+          "high": 0.22098,
+          "low": 0.22066,
+          "close": 0.22098,
+          "volume": 614.91295462
         },
         "indicators": {
-          "ema_20": 0.018540234330609418,
-          "ema_50": 0.018610897860013815,
-          "rsi_14": 46.26302882051887,
-          "macd": -3.2769210259638026e-06,
-          "macd_signal": -4.5050726712120445e-06,
-          "macd_hist": 1.2281516452482418e-06,
-          "atr_14": 4.976541856601394e-06,
-          "adx_14": 18.212718971651352,
-          "bb_high": 0.01854,
-          "bb_low": 0.01854,
-          "bb_mid": 0.01854,
-          "bb_width": 0.0
+          "ema_20": 0.2221499789598154,
+          "ema_50": 0.22388066952321145,
+          "ema_9": 0.22104179459544307,
+          "ema_21": 0.222226088889515,
+          "ema_200": 0.22877661980270786,
+          "vol_sma_20": 35634.297183478004,
+          "rsi_14": 43.16827853013335,
+          "macd": -0.0011698333458802224,
+          "macd_signal": -0.0009361547946131403,
+          "macd_hist": -0.00023367855126708208,
+          "atr_14": 0.0011071599316527171,
+          "adx_14": 25.49753435048942,
+          "bb_high": 0.22654066328789182,
+          "bb_low": 0.21891133671210825,
+          "bb_mid": 0.22272600000000004,
+          "bb_width": 0.03425431505878783
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "trending",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      }
+    },
+    "DOT/USDT": {
+      "1h": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:00:00+00:00",
+          "open": 3.8642,
+          "high": 3.8642,
+          "low": 3.8433,
+          "close": 3.8576,
+          "volume": 1175.17625262
+        },
+        "indicators": {
+          "ema_20": 3.9084001032824935,
+          "ema_50": 3.956619991417792,
+          "ema_9": 3.8856834544938414,
+          "ema_21": 3.910660683994354,
+          "ema_200": 3.8806122330592023,
+          "vol_sma_20": 2419.793629916,
+          "rsi_14": 37.118236333169115,
+          "macd": -0.030459644563320065,
+          "macd_signal": -0.03260671680888755,
+          "macd_hist": 0.002147072245567483,
+          "atr_14": 0.03285132607664336,
+          "adx_14": 24.82466624321947,
+          "bb_high": 3.9603566108143546,
+          "bb_low": 3.8355733891856456,
+          "bb_mid": 3.897965,
+          "bb_width": 0.032012401760587644
         },
         "signals": {
           "rsi_zone": "neutral",
@@ -746,33 +1098,79 @@
           "trend": "choppy",
           "breakout_up": false,
           "breakout_dn": false,
-          "ema_state": "bearish"
+          "ema_state": "bearish",
+          "ema_alignment": "mixed",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
+        }
+      },
+      "15m": {
+        "last_candle": {
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 3.8573,
+          "high": 3.8576,
+          "low": 3.8573,
+          "close": 3.8576,
+          "volume": 19.26070157
+        },
+        "indicators": {
+          "ema_20": 3.8767948306450957,
+          "ema_50": 3.891918120157271,
+          "ema_9": 3.8647753099131186,
+          "ema_21": 3.877499563160022,
+          "ema_200": 3.961024663787108,
+          "vol_sma_20": 1213.4500568195,
+          "rsi_14": 40.45636941320389,
+          "macd": -0.011482320710536786,
+          "macd_signal": -0.007578432413372841,
+          "macd_hist": -0.0039038882971639457,
+          "atr_14": 0.011431094128752812,
+          "adx_14": 11.325796323958425,
+          "bb_high": 3.927347092753955,
+          "bb_low": 3.8420029072460453,
+          "bb_mid": 3.884675,
+          "bb_width": 0.02196945317379435
+        },
+        "signals": {
+          "rsi_zone": "neutral",
+          "macd_cross": "none",
+          "trend": "choppy",
+          "breakout_up": false,
+          "breakout_dn": false,
+          "ema_state": "bearish",
+          "ema_alignment": "bearish",
+          "long_regime": "below_200",
+          "scalp_ema": "bearish"
         }
       }
     },
-    "ACH/USD": {
+    "ETH/USDT": {
       "1h": {
         "last_candle": {
           "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.02132,
-          "high": 0.02132,
-          "low": 0.02132,
-          "close": 0.02132,
-          "volume": 0.0
+          "open": 4278.68,
+          "high": 4282.9,
+          "low": 4262.4,
+          "close": 4281.14,
+          "volume": 5.08924912
         },
         "indicators": {
-          "ema_20": 0.021795475808916102,
-          "ema_50": 0.022160550660079065,
-          "rsi_14": 36.720594943094056,
-          "macd": -0.0002897299945383326,
-          "macd_signal": -0.00028448356513553216,
-          "macd_hist": -5.246429402800464e-06,
-          "atr_14": 0.0002243759830283062,
-          "adx_14": 18.993227507111925,
-          "bb_high": 0.02241552635605074,
-          "bb_low": 0.021125473643949264,
-          "bb_mid": 0.0217705,
-          "bb_width": 0.05925691702540019
+          "ema_20": 4281.038765943349,
+          "ema_50": 4253.304969681846,
+          "ema_9": 4287.753139143193,
+          "ema_21": 4280.427347161095,
+          "ema_200": 4009.773196002718,
+          "vol_sma_20": 78.75137026600001,
+          "rsi_14": 50.99379701016365,
+          "macd": 8.767304475420133,
+          "macd_signal": 9.059720459343664,
+          "macd_hist": -0.2924159839235312,
+          "atr_14": 34.77810168756325,
+          "adx_14": 15.931379913180395,
+          "bb_high": 4337.528106570958,
+          "bb_low": 4219.859893429043,
+          "bb_mid": 4278.694,
+          "bb_width": 0.02750096481354234
         },
         "signals": {
           "rsi_zone": "neutral",
@@ -780,31 +1178,38 @@
           "trend": "choppy",
           "breakout_up": false,
           "breakout_dn": false,
-          "ema_state": "bearish"
+          "ema_state": "bullish",
+          "ema_alignment": "bullish",
+          "long_regime": "above_200",
+          "scalp_ema": "bullish"
         }
       },
       "15m": {
         "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.02132,
-          "high": 0.02132,
-          "low": 0.02132,
-          "close": 0.02132,
-          "volume": 0.0
+          "timestamp": "2025-08-12T11:30:00+00:00",
+          "open": 4275.9,
+          "high": 4281.14,
+          "low": 4275.9,
+          "close": 4281.14,
+          "volume": 0.4631304
         },
         "indicators": {
-          "ema_20": 0.02151932416130056,
-          "ema_50": 0.021676441118792546,
-          "rsi_14": 32.52996223385158,
-          "macd": -9.805294239063553e-05,
-          "macd_signal": -6.38224861325413e-05,
-          "macd_hist": -3.423045625809423e-05,
-          "atr_14": 5.515867523050506e-05,
-          "adx_14": 20.20794169170851,
-          "bb_high": 0.02193059089771028,
-          "bb_low": 0.021204409102289712,
-          "bb_mid": 0.021567499999999996,
-          "bb_width": 0.03367018872936452
+          "ema_20": 4288.843152729328,
+          "ema_50": 4285.903765858831,
+          "ema_9": 4282.445764790955,
+          "ema_21": 4289.025370376411,
+          "ema_200": 4266.038860441645,
+          "vol_sma_20": 18.178345266500003,
+          "rsi_14": 46.435686908587726,
+          "macd": -4.20461936187894,
+          "macd_signal": -0.26192231341356864,
+          "macd_hist": -3.9426970484653716,
+          "atr_14": 12.778455315853881,
+          "adx_14": 13.362902970478387,
+          "bb_high": 4327.099523898408,
+          "bb_low": 4265.3484761015925,
+          "bb_mid": 4296.224,
+          "bb_width": 0.014373330579787116
         },
         "signals": {
           "rsi_zone": "neutral",
@@ -812,205 +1217,10 @@
           "trend": "choppy",
           "breakout_up": false,
           "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      }
-    },
-    "ACT/EUR": {
-      "1h": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.03611,
-          "high": 0.03611,
-          "low": 0.03611,
-          "close": 0.03611,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.03647354482874947,
-          "ema_50": 0.036735107916781314,
-          "rsi_14": 42.54066298591302,
-          "macd": -0.00032256883032067557,
-          "macd_signal": -0.0003132905869376258,
-          "macd_hist": -9.278243383049759e-06,
-          "atr_14": 0.00031125737209425537,
-          "adx_14": 20.72528398226936,
-          "bb_high": 0.03762465828467888,
-          "bb_low": 0.035225341715321115,
-          "bb_mid": 0.036425,
-          "bb_width": 0.06587004994805128
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      },
-      "15m": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.03611,
-          "high": 0.03611,
-          "low": 0.03611,
-          "close": 0.03611,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.03613753515530042,
-          "ema_50": 0.03630828523261797,
-          "rsi_14": 44.06352820920808,
-          "macd": -2.2650431137340166e-05,
-          "macd_signal": -2.957904280857028e-05,
-          "macd_hist": 6.928611671230114e-06,
-          "atr_14": 3.25019031753563e-05,
-          "adx_14": 28.6181571347654,
-          "bb_high": 0.036515371362832984,
-          "bb_low": 0.03572062863716701,
-          "bb_mid": 0.036118,
-          "bb_width": 0.02200406239730807
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "trending",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      }
-    },
-    "ACT/USD": {
-      "1h": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.04101,
-          "high": 0.04101,
-          "low": 0.04101,
-          "close": 0.04101,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.041901978055797075,
-          "ema_50": 0.042446115373922996,
-          "rsi_14": 34.932784804377135,
-          "macd": -0.0005733644293998696,
-          "macd_signal": -0.0005366118694773616,
-          "macd_hist": -3.675255992250802e-05,
-          "atr_14": 0.0003833479902228741,
-          "adx_14": 22.4664949695085,
-          "bb_high": 0.04335640827545501,
-          "bb_low": 0.04047559172454499,
-          "bb_mid": 0.041916,
-          "bb_width": 0.06872832691358957
-        },
-        "signals": {
-          "rsi_zone": "neutral",
-          "macd_cross": "none",
-          "trend": "choppy",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      },
-      "15m": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.04101,
-          "high": 0.04101,
-          "low": 0.04101,
-          "close": 0.04101,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.041310948217434314,
-          "ema_50": 0.04165685135820828,
-          "rsi_14": 25.041839785277375,
-          "macd": -0.00018094670179329142,
-          "macd_signal": -0.00014246511916173748,
-          "macd_hist": -3.848158263155394e-05,
-          "atr_14": 6.010054479528428e-05,
-          "adx_14": 35.47241179633728,
-          "bb_high": 0.041919304352580275,
-          "bb_low": 0.040825695647419724,
-          "bb_mid": 0.0413725,
-          "bb_width": 0.026433227510074347
-        },
-        "signals": {
-          "rsi_zone": "oversold",
-          "macd_cross": "none",
-          "trend": "trending",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      }
-    },
-    "ACX/EUR": {
-      "1h": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.1525,
-          "high": 0.1525,
-          "low": 0.1525,
-          "close": 0.1525,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.15422807012955103,
-          "ema_50": 0.15575522341465614,
-          "rsi_14": 8.80779616175802,
-          "macd": -0.0012686258356217062,
-          "macd_signal": -0.0012240832126929997,
-          "macd_hist": -4.454262292870651e-05,
-          "atr_14": 0.0002211760337497269,
-          "adx_14": 64.8117219161218,
-          "bb_high": 0.15619226181650525,
-          "bb_low": 0.15217773818349478,
-          "bb_mid": 0.15418500000000002,
-          "bb_width": 0.026037056996533185
-        },
-        "signals": {
-          "rsi_zone": "oversold",
-          "macd_cross": "none",
-          "trend": "trending",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
-        }
-      },
-      "15m": {
-        "last_candle": {
-          "timestamp": "2025-08-12T11:00:00+00:00",
-          "open": 0.1525,
-          "high": 0.1525,
-          "low": 0.1525,
-          "close": 0.1525,
-          "volume": 0.0
-        },
-        "indicators": {
-          "ema_20": 0.15289310264417602,
-          "ema_50": 0.1537035638813669,
-          "rsi_14": 0.10810186413056044,
-          "macd": -0.0004499436789077438,
-          "macd_signal": -0.0004897421369487252,
-          "macd_hist": 3.9798458040981406e-05,
-          "atr_14": 4.713708615847215e-05,
-          "adx_14": 97.19830434387245,
-          "bb_high": 0.15439999999999893,
-          "bb_low": 0.1513600000000011,
-          "bb_mid": 0.15288000000000002,
-          "bb_width": 0.019884877027719922
-        },
-        "signals": {
-          "rsi_zone": "oversold",
-          "macd_cross": "none",
-          "trend": "trending",
-          "breakout_up": false,
-          "breakout_dn": false,
-          "ema_state": "bearish"
+          "ema_state": "bullish",
+          "ema_alignment": "bullish",
+          "long_regime": "above_200",
+          "scalp_ema": "bearish"
         }
       }
     }
