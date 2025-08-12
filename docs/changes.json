@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-12T09:57:33.983958+00:00",
+  "generated_at": "2025-08-12T10:51:02.704367+00:00",
   "notes": [],
   "changes": [
     {
@@ -7,63 +7,96 @@
       "timeframe": "15m",
       "diff": {
         "macd_cross": {
-          "from": "none",
-          "to": "bullish"
+          "from": "bullish",
+          "to": "none"
+        },
+        "trend": {
+          "from": "trending",
+          "to": "choppy"
         },
         "breakout_up": {
-          "from": false,
-          "to": true
+          "from": true,
+          "to": false
         }
       },
-      "price": 0.2305
+      "price": 0.2272
+    },
+    {
+      "symbol": "A/EUR",
+      "timeframe": "15m",
+      "diff": {
+        "rsi_zone": {
+          "from": "overbought",
+          "to": "oversold"
+        }
+      },
+      "price": 0.4545
+    },
+    {
+      "symbol": "A/USD",
+      "timeframe": "15m",
+      "diff": {
+        "ema_state": {
+          "from": "bullish",
+          "to": "bearish"
+        }
+      },
+      "price": 0.5249
     },
     {
       "symbol": "AAVE/USD",
       "timeframe": "15m",
       "diff": {
         "breakout_dn": {
-          "from": false,
-          "to": true
+          "from": true,
+          "to": false
         }
       },
-      "price": 295.09
+      "price": 295.16
     },
     {
-      "symbol": "AB/EUR",
+      "symbol": "AB/USD",
       "timeframe": "15m",
+      "diff": {
+        "macd_cross": {
+          "from": "bearish",
+          "to": "bullish"
+        }
+      },
+      "price": 0.00817
+    },
+    {
+      "symbol": "ACA/USD",
+      "timeframe": "1h",
       "diff": {
         "ema_state": {
           "from": "bearish",
           "to": "bullish"
         }
       },
-      "price": 0.007044
+      "price": 0.0294
     },
     {
-      "symbol": "AB/USD",
-      "timeframe": "1h",
-      "diff": {
-        "macd_cross": {
-          "from": "bullish",
-          "to": "none"
-        }
-      },
-      "price": 0.008154
-    },
-    {
-      "symbol": "AB/USD",
+      "symbol": "ACT/USD",
       "timeframe": "15m",
       "diff": {
-        "macd_cross": {
-          "from": "none",
-          "to": "bearish"
-        },
-        "ema_state": {
-          "from": "bullish",
-          "to": "bearish"
+        "rsi_zone": {
+          "from": "neutral",
+          "to": "oversold"
         }
       },
-      "price": 0.008154
+      "price": 0.04101
+    },
+    {
+      "symbol": "ACX/EUR",
+      "timeframe": "1h",
+      "diff": {
+        "breakout_dn": {
+          "from": true,
+          "to": false
+        }
+      },
+      "price": 0.1525
     }
   ]
 }

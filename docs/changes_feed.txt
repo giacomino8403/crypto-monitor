@@ -1,0 +1,11 @@
+generated_at=2025-08-12T10:51:02.704367+00:00
+1INCH/EUR,15m,macd_cross,bullish,none,price=0.2272
+1INCH/EUR,15m,trend,trending,choppy,price=0.2272
+1INCH/EUR,15m,breakout_up,True,False,price=0.2272
+A/EUR,15m,rsi_zone,overbought,oversold,price=0.4545
+A/USD,15m,ema_state,bullish,bearish,price=0.5249
+AAVE/USD,15m,breakout_dn,True,False,price=295.16
+AB/USD,15m,macd_cross,bearish,bullish,price=0.00817
+ACA/USD,1h,ema_state,bearish,bullish,price=0.0294
+ACT/USD,15m,rsi_zone,neutral,oversold,price=0.04101
+ACX/EUR,1h,breakout_dn,True,False,price=0.1525
