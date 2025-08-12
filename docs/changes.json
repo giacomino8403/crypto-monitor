@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-12T09:46:53.392155+00:00",
+  "generated_at": "2025-08-12T09:57:33.983958+00:00",
   "notes": [],
   "changes": [
     {
@@ -7,81 +7,63 @@
       "timeframe": "15m",
       "diff": {
         "macd_cross": {
-          "from": "bearish",
-          "to": "none"
+          "from": "none",
+          "to": "bullish"
+        },
+        "breakout_up": {
+          "from": false,
+          "to": true
         }
       },
-      "price": 0.2274
+      "price": 0.2305
     },
     {
-      "symbol": "1INCH/USD",
+      "symbol": "AAVE/USD",
       "timeframe": "15m",
       "diff": {
-        "macd_cross": {
-          "from": "bearish",
-          "to": "none"
+        "breakout_dn": {
+          "from": false,
+          "to": true
         }
       },
-      "price": 0.2665
+      "price": 295.09
     },
     {
       "symbol": "AB/EUR",
       "timeframe": "15m",
       "diff": {
-        "breakout_dn": {
-          "from": true,
-          "to": false
-        },
         "ema_state": {
-          "from": "bullish",
-          "to": "bearish"
+          "from": "bearish",
+          "to": "bullish"
         }
       },
-      "price": 0.007021
+      "price": 0.007044
     },
     {
       "symbol": "AB/USD",
       "timeframe": "1h",
       "diff": {
         "macd_cross": {
-          "from": "none",
-          "to": "bullish"
+          "from": "bullish",
+          "to": "none"
         }
       },
-      "price": 0.008183
+      "price": 0.008154
     },
     {
       "symbol": "AB/USD",
       "timeframe": "15m",
       "diff": {
-        "ema_state": {
-          "from": "bearish",
-          "to": "bullish"
-        }
-      },
-      "price": 0.008183
-    },
-    {
-      "symbol": "ACH/EUR",
-      "timeframe": "15m",
-      "diff": {
-        "trend": {
-          "from": "trending",
-          "to": "choppy"
-        }
-      },
-      "price": 0.01854
-    },
-    {
-      "symbol": "ACH/USD",
-      "timeframe": "15m",
-      "diff": {
         "macd_cross": {
-          "from": "bearish",
-          "to": "none"
+          "from": "none",
+          "to": "bearish"
+        },
+        "ema_state": {
+          "from": "bullish",
+          "to": "bearish"
         }
       },
-      "price": 0.02157
+      "price": 0.008154
     }
   ]
 }
