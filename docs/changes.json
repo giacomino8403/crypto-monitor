@@ -1,7 +1,61 @@
 {
-  "generated_at": "2025-08-12T09:14:13.119060+00:00",
-  "notes": [
-    "first_run"
-  ],
-  "changes": []
+  "generated_at": "2025-08-12T09:22:37.632887+00:00",
+  "notes": [],
+  "changes": [
+    {
+      "symbol": "1INCH/EUR",
+      "timeframe": "15m",
+      "diff": {
+        "macd_cross": {
+          "from": "none",
+          "to": "bearish"
+        }
+      },
+      "price": 0.2274
+    },
+    {
+      "symbol": "1INCH/USD",
+      "timeframe": "15m",
+      "diff": {
+        "macd_cross": {
+          "from": "none",
+          "to": "bearish"
+        }
+      },
+      "price": 0.2635
+    },
+    {
+      "symbol": "AAVE/USD",
+      "timeframe": "15m",
+      "diff": {
+        "macd_cross": {
+          "from": "bearish",
+          "to": "none"
+        }
+      },
+      "price": 296.39
+    },
+    {
+      "symbol": "AB/EUR",
+      "timeframe": "15m",
+      "diff": {
+        "macd_cross": {
+          "from": "bearish",
+          "to": "none"
+        }
+      },
+      "price": 0.007021
+    },
+    {
+      "symbol": "ACH/USD",
+      "timeframe": "15m",
+      "diff": {
+        "macd_cross": {
+          "from": "none",
+          "to": "bearish"
+        }
+      },
+      "price": 0.02157
+    }
+  ]
 }
