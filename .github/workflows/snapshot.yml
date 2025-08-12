@@ -1,9 +1,12 @@
-name: Update Snapshot
+name: Snapshot
 
 on:
   schedule:
     - cron: "*/10 * * * *" # Esegui ogni 10 minuti
   workflow_dispatch:       # Possibilità di lanciarlo manualmente
+
+  permissions:
+  contents: write
 
 jobs:
   build:
