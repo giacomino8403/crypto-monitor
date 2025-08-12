@@ -1,22 +1,17 @@
 name: snapshot
 
-# === nuove scadenze ===
 on:
   schedule:
     - cron: "*/10 * * * *"     # ogni 10 minuti (00, 10, 20...)
     - cron: "5-59/10 * * * *"  # ridondanza: 05, 15, 25...
   workflow_dispatch:
-  # === fine scadenze ===
-
 
 permissions:
   contents: write
 
-  # === annulla lavoro in corso ===
   concurrency:
   group: snapshot
   cancel-in-progress: true
-  # === fine ===
 
 
 jobs:
