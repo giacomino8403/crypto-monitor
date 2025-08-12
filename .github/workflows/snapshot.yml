@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/snapshot.json docs/changes.json docs/signals_feed.txt docs/changes_feed.txt || true
+          git add docs/snapshot.json docs/changes.json docs/signals_feed.txt docs/changes_feed.txt docs/signals_feed.html docs/changes_feed.html || true
           if ! git diff --cached --quiet; then
             git commit -m "Update snapshots ($(date -u +"%Y-%m-%dT%H:%M:%SZ"))"
             git push
