@@ -7,7 +7,7 @@ crypto_monitor: fetch Kraken market data, compute indicators, and publish JSON s
 - Configurable via env vars:
     EXCHANGE      (default: kraken)
     TICKERS       (comma-separated; default: auto-pick spot/perp pairs quoted in USDT)
-    TIMEFRAMES    (comma-separated; default: 1m,1w,1d,4h,1h,15m)
+    TIMEFRAMES    (comma-separated; default: 1M,1w,1d,4h,1h,15m)
     LIMIT         (candles per timeframe; default: 200)
     MAX_PAIRS     (only when TICKERS not set; default: 15)
 """
@@ -30,8 +30,8 @@ def ensure_dir(p: Path):
     p.mkdir(parents=True, exist_ok=True)
 
 def pick_markets(ex, max_pairs=15):
-    # Auto-pick liquid spot pairs quoted in USDT/USD/EUR
-    quote_whitelist = {"USDT","USD","EUR"}
+    # Auto-pick liquid spot pairs quoted in USDT (solo USDT come richiesto)
+    quote_whitelist = {"USDT"}
     markets = ex.load_markets()
     syms = []
     for sym, m in markets.items():
@@ -47,6 +47,13 @@ def compute_indicators(df: pd.DataFrame):
     df = df.copy()
     df['ema_20'] = EMAIndicator(close=df['close'], window=20).ema_indicator()
     df['ema_50'] = EMAIndicator(close=df['close'], window=50).ema_indicator()
+
+    # === AGGIUNTA: indicatori extra per L/S/S ===
+    df['ema_9']   = EMAIndicator(close=df['close'], window=9).ema_indicator()
+    df['ema_21']  = EMAIndicator(close=df['close'], window=21).ema_indicator()
+    df['ema_200'] = EMAIndicator(close=df['close'], window=200).ema_indicator()
+    df['vol_sma_20'] = df['volume'].rolling(20).mean()
+    # === FINE AGGIUNTA ===
 
     rsi = RSIIndicator(close=df['close'], window=14)
     df['rsi_14'] = rsi.rsi()
@@ -90,6 +97,16 @@ def derive_signals(df: pd.DataFrame):
     breakout_dn = bool(last['close'] < last['bb_low'])
     ema_state = 'bullish' if last['ema_20'] > last['ema_50'] else 'bearish' if last['ema_20'] < last['ema_50'] else 'flat'
 
+    # === AGGIUNTA: segnali derivati per L/S/S ===
+    ema_alignment = (
+        'bullish' if (last['ema_20'] > last['ema_50'] > last['ema_200'])
+        else 'bearish' if (last['ema_20'] < last['ema_50'] < last['ema_200'])
+        else 'mixed'
+    )
+    long_regime = 'above_200' if last['close'] > last['ema_200'] else 'below_200'
+    scalp_ema = 'bullish' if last['ema_9'] > last['ema_21'] else 'bearish'
+    # === FINE AGGIUNTA ===
+
     return {
         'rsi_zone': rsi_zone,
         'macd_cross': macd_cross,
@@ -97,6 +114,10 @@ def derive_signals(df: pd.DataFrame):
         'breakout_up': breakout_up,
         'breakout_dn': breakout_dn,
         'ema_state': ema_state,
+        # aggiunte
+        'ema_alignment': ema_alignment,
+        'long_regime': long_regime,
+        'scalp_ema': scalp_ema,
     }
 
 def ohlcv_to_df(ohlcv):
@@ -117,7 +138,8 @@ def fetch_ohlcv_safe(ex, symbol, timeframe, limit):
 
 def build_snapshot():
     exchange_id = os.getenv("EXCHANGE","kraken")
-    timeframes = [t.strip() for t in os.getenv("TIMEFRAMES","1h,15m").split(",") if t.strip()]
+    # === MODIFICA: includiamo 1d/1w/1M come default ===
+    timeframes = [t.strip() for t in os.getenv("TIMEFRAMES","1M,1w,1d,4h,1h,15m").split(",") if t.strip()]
     limit = int(os.getenv("LIMIT","200"))
     max_pairs = int(os.getenv("MAX_PAIRS","15"))
     tickers_env = os.getenv("TICKERS", "").strip()
@@ -162,6 +184,12 @@ def build_snapshot():
                 'indicators': {
                     'ema_20': float(last['ema_20']),
                     'ema_50': float(last['ema_50']),
+                    # === AGGIUNTA: pubblica anche i nuovi indicatori ===
+                    'ema_9': float(last['ema_9']),
+                    'ema_21': float(last['ema_21']),
+                    'ema_200': float(last['ema_200']),
+                    'vol_sma_20': float(last['vol_sma_20']) if pd.notna(last['vol_sma_20']) else None,
+                    # === FINE AGGIUNTA ===
                     'rsi_14': float(last['rsi_14']),
                     'macd': float(last['macd']),
                     'macd_signal': float(last['macd_signal']),
@@ -223,7 +251,7 @@ def main():
     with (docs / "changes.json").open("w", encoding="utf-8") as f:
         json.dump(changes, f, ensure_ascii=False, indent=2)
 
-    # === AGGIUNTA: Creazione file TXT leggibili ===
+    # === TXT (estesi con i nuovi campi) ===
     signals_lines = [f"generated_at={snapshot.get('generated_at','N/A')}"]
     for sym, tf_data in snapshot.get("data", {}).items():
         for tf, row in tf_data.items():
@@ -234,8 +262,23 @@ def main():
                 f"{sym},{tf}"
                 f",price={lc.get('close')}"
                 f",rsi={round(ind.get('rsi_14',0),2)}"
+                f",macd={round(ind.get('macd',0),6)}"
+                f",macd_sig={round(ind.get('macd_signal',0),6)}"
+                f",macd_hist={round(ind.get('macd_hist',0),6)}"
+                f",ema9={round(ind.get('ema_9',0),6)}"
+                f",ema21={round(ind.get('ema_21',0),6)}"
+                f",ema20={round(ind.get('ema_20',0),6)}"
+                f",ema50={round(ind.get('ema_50',0),6)}"
+                f",ema200={round(ind.get('ema_200',0),6)}"
+                f",atr={round(ind.get('atr_14',0),6)}"
+                f",bbw={round(ind.get('bb_width',0),6)}"
+                f",vol={lc.get('volume')}"
+                f",vol_sma20={round(ind.get('vol_sma_20',0),6) if ind.get('vol_sma_20') is not None else 'nan'}"
                 f",macd_cross={sig.get('macd_cross')}"
                 f",ema_state={sig.get('ema_state')}"
+                f",ema_align={sig.get('ema_alignment')}"
+                f",long_regime={sig.get('long_regime')}"
+                f",scalp_ema={sig.get('scalp_ema')}"
                 f",trend={sig.get('trend')}"
                 f",breakout_up={sig.get('breakout_up')}"
                 f",breakout_dn={sig.get('breakout_dn')}"
@@ -253,9 +296,9 @@ def main():
                 f"{sym},{tf},{k},{v.get('from')},{v.get('to')},price={price}"
             )
     (docs / "changes_feed.txt").write_text("\n".join(changes_lines) + "\n", encoding="utf-8")
-    # === FINE AGGIUNTA ===
+    # === FINE TXT ===
 
-        # === Creazione pagina HTML per signals ===
+    # === HTML (lasciato invariato) ===
     html_signals = ["<html><head><meta charset='utf-8'><title>Signals Feed</title></head><body>"]
     html_signals.append(f"<h1>Signals Feed - generated at {snapshot.get('generated_at','N/A')}</h1>")
     html_signals.append("<table border='1' cellpadding='5'><tr><th>Symbol</th><th>Timeframe</th><th>Price</th><th>RSI</th><th>MACD Cross</th><th>EMA State</th><th>Trend</th><th>Breakout Up</th><th>Breakout Down</th><th>ADX</th></tr>")
@@ -278,7 +321,6 @@ def main():
     html_signals.append("</table></body></html>")
     (docs / "signals_feed.html").write_text("\n".join(html_signals), encoding="utf-8")
 
-    # === Creazione pagina HTML per changes ===
     html_changes = ["<html><head><meta charset='utf-8'><title>Changes Feed</title></head><body>"]
     html_changes.append(f"<h1>Changes Feed - generated at {changes.get('generated_at','N/A')}</h1>")
     html_changes.append("<table border='1' cellpadding='5'><tr><th>Symbol</th><th>Timeframe</th><th>Indicator</th><th>From</th><th>To</th><th>Price</th></tr>")
@@ -293,7 +335,6 @@ def main():
             )
     html_changes.append("</table></body></html>")
     (docs / "changes_feed.html").write_text("\n".join(html_changes), encoding="utf-8")
-
     # === Fine HTML ===
 
     print(f"Wrote docs/snapshot.json, docs/changes.json, docs/signals_feed.txt and docs/changes_feed.txt at {now_iso()}")
