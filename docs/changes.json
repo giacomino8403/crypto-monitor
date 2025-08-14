@@ -1,20 +1,51 @@
 {
-  "generated_at": "2025-08-14T14:51:30.089597+00:00",
+  "generated_at": "2025-08-14T15:00:11.700485+00:00",
   "notes": [],
   "changes": [
     {
       "symbol": "ADA/USDT",
-      "timeframe": "5m",
+      "timeframe": "1m",
       "diff": {
-        "scalp_ema": {
+        "trend": {
+          "from": "choppy",
+          "to": "trending"
+        },
+        "ema_state": {
           "from": "bullish",
+          "to": "bearish"
+        },
+        "ema_alignment": {
+          "from": "mixed",
           "to": "bearish"
         }
       },
-      "price": 0.93217
+      "price": 0.927586
     },
     {
-      "symbol": "ADA/USDT",
+      "symbol": "AI16Z/USDT",
+      "timeframe": "1m",
+      "diff": {
+        "rsi_zone": {
+          "from": "neutral",
+          "to": "overbought"
+        },
+        "trend": {
+          "from": "choppy",
+          "to": "trending"
+        },
+        "ema_state": {
+          "from": "bearish",
+          "to": "bullish"
+        },
+        "ema_alignment": {
+          "from": "bearish",
+          "to": "mixed"
+        }
+      },
+      "price": 0.128
+    },
+    {
+      "symbol": "ALGO/USDT",
       "timeframe": "1m",
       "diff": {
         "scalp_ema": {
@@ -22,65 +53,10 @@
           "to": "bearish"
         }
       },
-      "price": 0.93217
-    },
-    {
-      "symbol": "ALGO/USDT",
-      "timeframe": "1h",
-      "diff": {
-        "rsi_zone": {
-          "from": "neutral",
-          "to": "oversold"
-        }
-      },
       "price": 0.26078
     },
     {
       "symbol": "APE/USDT",
-      "timeframe": "15m",
-      "diff": {
-        "macd_cross": {
-          "from": "none",
-          "to": "bullish"
-        }
-      },
-      "price": 0.6195
-    },
-    {
-      "symbol": "ATOM/USDT",
-      "timeframe": "15m",
-      "diff": {
-        "macd_cross": {
-          "from": "none",
-          "to": "bullish"
-        }
-      },
-      "price": 4.6245
-    },
-    {
-      "symbol": "AVAX/USDT",
-      "timeframe": "15m",
-      "diff": {
-        "macd_cross": {
-          "from": "none",
-          "to": "bullish"
-        }
-      },
-      "price": 24.25
-    },
-    {
-      "symbol": "BCH/USDT",
-      "timeframe": "15m",
-      "diff": {
-        "macd_cross": {
-          "from": "none",
-          "to": "bullish"
-        }
-      },
-      "price": 597.19
-    },
-    {
-      "symbol": "BCH/USDT",
       "timeframe": "5m",
       "diff": {
         "trend": {
@@ -88,47 +64,29 @@
           "to": "choppy"
         }
       },
-      "price": 597.19
+      "price": 0.6201
     },
     {
-      "symbol": "BCH/USDT",
-      "timeframe": "1m",
-      "diff": {
-        "macd_cross": {
-          "from": "none",
-          "to": "bearish"
-        }
-      },
-      "price": 597.19
-    },
-    {
-      "symbol": "BERA/USDT",
+      "symbol": "APE/USDT",
       "timeframe": "1m",
       "diff": {
         "rsi_zone": {
-          "from": "overbought",
-          "to": "neutral"
+          "from": "neutral",
+          "to": "overbought"
         },
-        "scalp_ema": {
-          "from": "bullish",
-          "to": "bearish"
+        "trend": {
+          "from": "choppy",
+          "to": "trending"
+        },
+        "breakout_up": {
+          "from": false,
+          "to": true
         }
       },
-      "price": 2.169
+      "price": 0.6201
     },
     {
-      "symbol": "BNB/USDT",
-      "timeframe": "1m",
-      "diff": {
-        "ema_alignment": {
-          "from": "mixed",
-          "to": "bullish"
-        }
-      },
-      "price": 855.85
-    },
-    {
-      "symbol": "BTC/USDT",
+      "symbol": "ATOM/USDT",
       "timeframe": "5m",
       "diff": {
         "scalp_ema": {
@@ -136,10 +94,51 @@
           "to": "bullish"
         }
       },
-      "price": 119233.1
+      "price": 4.635
     },
     {
-      "symbol": "BTC/USDT",
+      "symbol": "AVAX/USDT",
+      "timeframe": "1w",
+      "diff": {
+        "scalp_ema": {
+          "from": "bullish",
+          "to": "bearish"
+        }
+      },
+      "price": 24.07
+    },
+    {
+      "symbol": "AVAX/USDT",
+      "timeframe": "15m",
+      "diff": {
+        "macd_cross": {
+          "from": "bullish",
+          "to": "none"
+        }
+      },
+      "price": 24.07
+    },
+    {
+      "symbol": "AVAX/USDT",
+      "timeframe": "1m",
+      "diff": {
+        "rsi_zone": {
+          "from": "overbought",
+          "to": "oversold"
+        },
+        "breakout_dn": {
+          "from": false,
+          "to": true
+        },
+        "scalp_ema": {
+          "from": "bullish",
+          "to": "bearish"
+        }
+      },
+      "price": 24.07
+    },
+    {
+      "symbol": "BCH/USDT",
       "timeframe": "1m",
       "diff": {
         "macd_cross": {
@@ -147,29 +146,70 @@
           "to": "none"
         }
       },
-      "price": 119233.1
+      "price": 597.19
     },
     {
-      "symbol": "DOGE/USDT",
-      "timeframe": "1h",
+      "symbol": "BTC/USDT",
+      "timeframe": "1m",
       "diff": {
-        "rsi_zone": {
-          "from": "oversold",
-          "to": "neutral"
+        "trend": {
+          "from": "trending",
+          "to": "choppy"
+        },
+        "scalp_ema": {
+          "from": "bullish",
+          "to": "bearish"
         }
       },
-      "price": 0.22805
+      "price": 118802.5
+    },
+    {
+      "symbol": "CRO/USDT",
+      "timeframe": "5m",
+      "diff": {
+        "scalp_ema": {
+          "from": "bearish",
+          "to": "bullish"
+        }
+      },
+      "price": 0.15523
     },
     {
       "symbol": "DOT/USDT",
       "timeframe": "1m",
       "diff": {
-        "rsi_zone": {
-          "from": "oversold",
-          "to": "neutral"
+        "trend": {
+          "from": "trending",
+          "to": "choppy"
         }
       },
-      "price": 4.0627
+      "price": 4.0532
+    },
+    {
+      "symbol": "ETH/USDT",
+      "timeframe": "5m",
+      "diff": {
+        "trend": {
+          "from": "trending",
+          "to": "choppy"
+        }
+      },
+      "price": 4671.99
+    },
+    {
+      "symbol": "ETH/USDT",
+      "timeframe": "1m",
+      "diff": {
+        "trend": {
+          "from": "trending",
+          "to": "choppy"
+        },
+        "scalp_ema": {
+          "from": "bullish",
+          "to": "bearish"
+        }
+      },
+      "price": 4671.99
     }
   ]
 }
